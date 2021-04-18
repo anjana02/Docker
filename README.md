@@ -23,6 +23,8 @@ And also it starts immediately.
 What are images?
 ================
 
+A Docker image is a file, comprised of multiple layers, that is used to execute code in a Docker container. An image is essentially built from the instructions for a complete and executable version of an application, which relies on the host OS kernel. When the Docker user runs an image, it can become one or multiple instances of that container.
+
 
 
 
