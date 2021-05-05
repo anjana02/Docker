@@ -368,7 +368,7 @@ The base command for the Docker CLI.
 
   
   <tr>
-    <td><a href="/engine/reference/commandline/trust/">docker trust</a></td>
+    <td> docker trust</td>
     <td>Manage trust on Docker images</td>
   </tr>
 
