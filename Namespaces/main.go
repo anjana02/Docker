@@ -1,7 +1,11 @@
 package main
 
-import "os"
-import "fmt"
+import (
+	"fmt"
+
+	"os"
+	"os/exec"
+)
 // docker        run image <command> <parameters>
 // go run main.go run       <command> <parameters>
 
@@ -16,7 +20,8 @@ func main()  {
 
 func run()  {
 	fmt.Printf("Running %v\n",os.Args[2:])
-    cmd != exec.Command(os.Args[2],os.Args[3:]...)
+
+    cmd := exec.Command(os.Args[2],os.Args[3:]...)
 	cmd.Stdin = os.Stdin
 	cmd.Stdout = os.Stdout
 	cmd.Stderr = os.Stderr
