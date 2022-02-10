@@ -1,7 +1,7 @@
 package main
 
 import "os"
-
+import "fmt"
 // docker        run image <command> <parameters>
 // go run main.go run       <command> <parameters>
 
@@ -16,6 +16,7 @@ func main()  {
 
 func run()  {
 	fmt.Printf("Running %v\n",os.Args[2:])
+
 }
 func must(err error)  {
 	if err != nil {
